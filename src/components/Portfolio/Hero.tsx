@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Github, Instagram, Mail, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.jpg"; // Replace with your insane background image
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/70" />
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Simiyon Vinscent Samuel L
+            Sathiya Priyan
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-2">
             Computer Science & Engineering Student
@@ -30,29 +30,37 @@ const Hero = () => {
         </div>
         
         <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          A motivated and detail-oriented Computer Science professional beginning the journey in web development and ML. 
-          Passionate about leveraging skills in machine learning, software development, and automation to contribute to 
-          innovative solutions in LLM and intelligent agents.
+          Passionate about building intelligent software solutions, exploring AI, machine learning, and mobile app development. 
+          Always experimenting with innovative ideas and creating projects that solve real-world problems efficiently.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300" onClick={() => {
-            const element = document.getElementById('projects');
-            if (element) element.scrollIntoView({ behavior: 'smooth' });
-          }}>
+          <Button 
+            size="lg" 
+            className="bg-gradient-primary hover:shadow-glow transition-all duration-300" 
+            onClick={() => {
+              const element = document.getElementById('projects');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             View My Work
           </Button>
-          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => {
-            const element = document.getElementById('contact');
-            if (element) element.scrollIntoView({ behavior: 'smooth' });
-          }}>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" 
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Get In Touch
           </Button>
         </div>
         
         <div className="flex justify-center gap-6">
           <a 
-            href="https://github.com/blackscythe123" 
+            href="https://github.com/sathiya-26" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover:shadow-glow"
@@ -60,7 +68,7 @@ const Hero = () => {
             <Github className="w-6 h-6" />
           </a>
           <a 
-            href="https://www.instagram.com/simiyon_sam.xx" 
+            href="https://www.instagram.com/?next=%2F" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover:shadow-glow"
@@ -68,7 +76,7 @@ const Hero = () => {
             <Instagram className="w-6 h-6" />
           </a>
           <a 
-            href="mailto:samsamuel@gmail.com"
+            href="mailto:sathiyapriyan10001@gmail.com" 
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover:shadow-glow"
           >
             <Mail className="w-6 h-6" />

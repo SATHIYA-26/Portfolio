@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "samsamuel@gmail.com",
-      href: "mailto:samsamuel@gmail.com"
+      value: "sathiyapriyan10001@gmail.com",
+      href: "mailto:sathiyapriyan10001@gmail.com"
     },
     {
       icon: MapPin,
@@ -28,20 +28,14 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/blackscythe123",
+      href: "https://github.com/sathiya-26",
       color: "hover:bg-gray-800"
     },
     {
       icon: Instagram,
       label: "Instagram", 
-      href: "https://www.instagram.com/simiyon_sam.xx",
+      href: "https://www.instagram.com/?next=%2F",
       color: "hover:bg-pink-600"
-    },
-    {
-      icon: Globe,
-      label: "CodinGame",
-      href: "https://www.codingame.com/profile/e4caa9e7f2070da34809b8c0a710ca4d3153376",
-      color: "hover:bg-blue-600"
     }
   ];
 
@@ -53,7 +47,7 @@ const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to collaborate on exciting projects or discuss opportunities in ML and web development
+            Ready to collaborate on exciting projects or discuss opportunities in ML and AI
           </p>
         </div>
 
@@ -90,7 +84,7 @@ const Contact = () => {
                   asChild
                   className="w-full bg-gradient-primary hover:shadow-glow"
                 >
-                  <a href="mailto:samsamuel@gmail.com">
+                  <a href="mailto:sathiyapriyan10001@gmail.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Send Email
                   </a>
@@ -129,9 +123,8 @@ const Contact = () => {
 
               <div className="mt-8 text-center">
                 <p className="text-sm text-muted-foreground">
-                  Interested in <span className="text-primary font-medium">Machine Learning</span>, 
-                  <span className="text-primary font-medium"> AI Agents</span>, and 
-                  <span className="text-primary font-medium"> Web Development</span>
+                  Interested in <span className="text-primary font-medium">Machine Learning</span> and 
+                  <span className="text-primary font-medium"> AI Agents</span>
                 </p>
               </div>
             </CardContent>

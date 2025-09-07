@@ -7,30 +7,36 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: Code,
-      skills: ["Python", "JavaScript", "C++", "C", "Dart"],
+      skills: ["Python", "Java", "C", "Dart"],
       color: "bg-gradient-primary"
     },
     {
       title: "Frameworks & Libraries",
       icon: Database,
-      skills: ["OpenCV", "React", "Flask"],
+      skills: ["PyTorch", "TensorFlow", "Transformers", "LangChain", "OpenCV"],
       color: "bg-gradient-secondary"
     },
     {
       title: "Tools & Technologies",
       icon: Wrench,
-      skills: ["Git", "LaTeX", "VS Code"],
+      skills: ["Git", "Hugging Face", "VS Code", "Google Colab", "Jupyter Notebook"],
       color: "bg-gradient-primary"
     },
     {
       title: "Core Concepts",
       icon: Brain,
-      skills: ["Data Structures", "Computer Vision", "Data Analysis", "Web Development"],
+      skills: ["Machine Learning", "Deep Learning", "Natural Language Processing", "Generative AI", "Data Science"],
       color: "bg-gradient-secondary"
     }
   ];
 
-  const fieldsOfInterest = ["Machine Learning", "AI Agents", "Automations", "Flutter App Development", "Deep Research"];
+  const fieldsOfInterest = [
+    "Machine Learning",
+    "Generative AI",
+    "AI Agents",
+    "Computer Vision",
+    "Natural Language Processing"
+  ];
 
   return (
     <section className="py-20 px-6">
@@ -40,13 +46,16 @@ const Skills = () => {
             Skills & Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for building innovative solutions
+            A comprehensive toolkit for building innovative AI-powered solutions
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="bg-card border-border hover:shadow-card transition-all duration-300 hover:scale-105">
+            <Card
+              key={index}
+              className="bg-card border-border hover:shadow-card transition-all duration-300 hover:scale-105"
+            >
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <div className={`p-2 rounded-lg ${category.color}`}>
@@ -58,9 +67,9 @@ const Skills = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge 
-                      key={skill} 
-                      variant="secondary" 
+                    <Badge
+                      key={skill}
+                      variant="secondary"
                       className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       {skill}
@@ -81,8 +90,8 @@ const Skills = () => {
           <CardContent>
             <div className="flex flex-wrap justify-center gap-4">
               {fieldsOfInterest.map((interest) => (
-                <Badge 
-                  key={interest} 
+                <Badge
+                  key={interest}
                   className="bg-primary text-primary-foreground text-lg py-2 px-4 hover:shadow-glow transition-all duration-300"
                 >
                   {interest}

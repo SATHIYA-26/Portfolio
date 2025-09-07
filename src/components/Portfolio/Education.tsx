@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { GraduationCap, MapPin, Calendar, BookOpen } from "lucide-react";
 
 const Education = () => {
-  const coursework = ["DSA in Unstop", "Flutter", "Java (W3Schools)"];
+  const coursework = ["Gen AI", "Flutter", "DSA"];
   
   return (
     <section className="py-20 px-6 bg-gradient-secondary">
@@ -43,7 +43,7 @@ const Education = () => {
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-3xl font-bold text-primary">8.125</div>
+                <div className="text-3xl font-bold text-primary">8</div>
                 <div className="text-sm text-muted-foreground">/ 10 GPA</div>
               </div>
             </div>
