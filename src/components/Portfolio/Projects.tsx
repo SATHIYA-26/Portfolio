@@ -5,9 +5,9 @@ import { Calendar } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      name: "Inventory Management",
+      name: "Image Processing",
       date: "2025",
-      description: "Project built using C for managing inventory efficiently.",
+      description: "A deep learning–based system for detecting synthetic images",
       tech: ["C"]
     },
     {
